@@ -5,3 +5,8 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: node index.js
+    envVars:
+      - key: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
+        value: "false"
+      - key: DISK_GEN_PATH
+        value: ./data
